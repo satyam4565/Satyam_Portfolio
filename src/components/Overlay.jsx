@@ -17,9 +17,14 @@ const Overlay = () => {
     const blur2 = useTransform(scrollYProgress, [0.25, 0.3, 0.4, 0.45], [10, 0, 0, 10]);
 
     // Section 3: "Where design meets..." (50% - 70%)
-    const opacity3 = useTransform(scrollYProgress, [0.5, 0.55, 0.65, 0.7], [0, 1, 1, 0]);
+    const opacity3 = useTransform(scrollYProgress, [0.5, 0.55, 0.60, 0.65], [0, 1, 1, 0]);
     const y3 = useTransform(scrollYProgress, [0.5, 0.7], [50, -50]);
     const blur3 = useTransform(scrollYProgress, [0.5, 0.55, 0.65, 0.7], [10, 0, 0, 10]);
+
+    //Section 4
+    const opacity4 = useTransform(scrollYProgress, [0.75, 0.8, 0.88, 0.92], [0, 1, 1, 0]);
+    const y4 = useTransform(scrollYProgress, [0.75, 0.92], [50, -50]);
+    const blur4 = useTransform(scrollYProgress, [0.75, 0.8, 0.88, 0.92], [10, 0, 0, 10]);
 
     return (
         <div className="fixed top-0 left-0 w-full h-screen pointer-events-none z-10 flex flex-col justify-center px-4 md:px-10 mix-blend-different">
@@ -61,6 +66,17 @@ const Overlay = () => {
                 <h2 className="text-4xl md:text-7xl font-bold text-right text-white max-w-4xl leading-[1.1] tracking-tight">
                     Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">algorithms</span> <br />
                     <span className="text-white/50">drive software.</span>
+                </h2>
+            </motion.div>
+
+            <motion.div
+                style={{ opacity: opacity4, y: y4, filter: useTransform(blur4, v => `blur(${v}px)`) }}
+                className="absolute inset-0 flex items-center justify-start md:pl-20 px-8"
+            >
+                <h2 className="text-4xl md:text-7xl font-bold text-white max-w-4xl leading-[1.1] tracking-tight">
+                    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">frontend</span> <br />
+                    <span className="text-white/50">meets backend.</span>
+
                 </h2>
             </motion.div>
 
