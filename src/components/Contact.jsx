@@ -28,7 +28,7 @@ const socialLinks = [
 const Contact = () => {
   return (
     <SectionWrapper id='contact'>
-      <div className='container lg:grid lg:grid-cols-2 lg:gap-20'>
+      <div className='container lg:grid lg:grid-cols-2 lg:gap-2'>
         <div className='mb-12 lg:mb-0'>
           <h2 className='headline-2 text-white mb-6'>Let's Create Something Great</h2>
           <p className='text-zinc-400 text-lg mb-8 max-w-[40ch]'>Reach out today to discuss your project needs and start collaborating on something amazing!</p>
