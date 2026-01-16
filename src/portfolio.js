@@ -50,6 +50,11 @@ export const skills = [
         desc: 'Programming'
     },
     {
+        imgSrc: '/images/python.svg',
+        label: 'Python',
+        desc: 'Scripting'
+    },
+    {
         imgSrc: '/images/HTML.svg',
         label: 'HTML',
         desc: 'Markup Language'
@@ -90,9 +95,24 @@ export const skills = [
         desc: 'Relational Database'
     },
     {
-        imgSrc: '/images/figma.svg',
-        label: 'Figma',
-        desc: 'Design tool'
+        imgSrc: '/images/numpy.svg',
+        label: 'NumPy',
+        desc: 'Mathematics'
+    },
+    {
+        imgSrc: '/images/pandas.svg',
+        label: 'Pandas',
+        desc: 'Data Analysis'
+    },
+    {
+        imgSrc: '/images/seaborn.svg',
+        label: 'Seaborn',
+        desc: 'Data Visualization'
+    },
+    {
+        imgSrc: '/images/Streamlit.svg',
+        label: 'Streamlit',
+        desc: 'Interactive Data Apps'
     },
     {
         imgSrc: '/images/git.svg',
@@ -100,19 +120,24 @@ export const skills = [
         desc: 'Version Control'
     },
     {
-        imgSrc: '/images/python.svg',
-        label: 'Python',
-        desc: 'Scripting'
-    },
-    {
         imgSrc: '/images/firebase.svg',
         label: 'Firebase',
         desc: 'Backend'
     },
     {
+        imgSrc: '/images/ChromaDB.svg',
+        label: 'ChromaDB',
+        desc: 'Vector Database'
+    },
+    {
         imgSrc: '/images/VS Code.svg',
         label: 'VS Code',
         desc: 'Editor'
+    },
+    {
+        imgSrc: '/images/jupyter.svg',
+        label: 'Jupyter',
+        desc: 'Data Analysis'
     },
 ];
 
@@ -130,7 +155,7 @@ export const works = [
         imgSrc: '/images/cinesuggest.png',
         title: 'CineSuggest',
         tags: ['Python', 'Streamlit', 'TMDB API'],
-        projectLink: 'https://cinesuggestai.streamlit.app/'
+        projectLink: 'https://github.com/satyam4565/CineSuggest'
     },
     {
         imgSrc: '/images/chromextp.png',
@@ -142,12 +167,12 @@ export const works = [
         imgSrc: '/images/heartg.png',
         title: 'HeartGuardian.AI',
         tags: ['Python', 'Streamlit'],
-        projectLink: 'https://heartguardianai.streamlit.app/'
+        projectLink: 'https://github.com/satyam4565/Heart_Stroke_Prediction'
     },
     {
         imgSrc: '/images/algoguru.png',
         title: 'AlgoGuru - DSA Chatbot',
         tags: ['React.js', 'TypeScript', 'Google Gemini API'],
-        projectLink: 'https://algoguru.vercel.app/'
+        projectLink: 'https://github.com/satyam4565/AlgoGuru---DSA-Chatbot'
     }
 ];

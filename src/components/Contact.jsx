@@ -44,7 +44,7 @@ const Contact = () => {
             <div>
               <label htmlFor='name' className='block text-zinc-400 text-sm font-medium mb-2'>Name</label>
               <input
-                type='text' name='name' id='name' autoComplete='name' required placeholder='John Doe'
+                type='text' name='name' id='name' autoComplete='name' required placeholder='Satyam Singh'
                 className='w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-zinc-200 outline-none focus:border-sky-400/50 focus:bg-white/10 transition-all placeholder:text-zinc-600'
               />
             </div>
@@ -52,7 +52,7 @@ const Contact = () => {
             <div>
               <label htmlFor='email' className='block text-zinc-400 text-sm font-medium mb-2'>Email</label>
               <input
-                type='email' name='email' id='email' autoComplete='email' required placeholder='john@example.com'
+                type='email' name='email' id='email' autoComplete='email' required placeholder='satyamsinghcs45@gmail.com'
                 className='w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-zinc-200 outline-none focus:border-sky-400/50 focus:bg-white/10 transition-all placeholder:text-zinc-600'
               />
             </div>
@@ -65,7 +65,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type='submit' className='w-full h-12 bg-gradient-to-r from-sky-400 to-blue-500 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-sky-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300'>
+            <button type='submit' className='w-full h-12 bg-gradient-to-r from-purple-300 to-pink-500 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-sky-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300'>
               Send Message
             </button>
           </div>

@@ -22,9 +22,9 @@ const Overlay = () => {
     const blur3 = useTransform(scrollYProgress, [0.5, 0.55, 0.65, 0.7], [10, 0, 0, 10]);
 
     //Section 4
-    const opacity4 = useTransform(scrollYProgress, [0.75, 0.8, 0.88, 0.92], [0, 1, 1, 0]);
-    const y4 = useTransform(scrollYProgress, [0.75, 0.92], [50, -50]);
-    const blur4 = useTransform(scrollYProgress, [0.75, 0.8, 0.88, 0.92], [10, 0, 0, 10]);
+    const opacity4 = useTransform(scrollYProgress, [0.68, 0.70, 0.85, 0.90], [0, 1, 1, 0]);
+    const y4 = useTransform(scrollYProgress, [0.68, 0.90], [50, -50]);
+    const blur4 = useTransform(scrollYProgress, [0.68, 0.70, 0.85, 0.90], [10, 0, 0, 10]);
 
     return (
         <div className="fixed top-0 left-0 w-full h-screen pointer-events-none z-10 flex flex-col justify-center px-4 md:px-10 mix-blend-different">
