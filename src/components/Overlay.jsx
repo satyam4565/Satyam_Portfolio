@@ -49,10 +49,10 @@ const Overlay = () => {
             {/* 2. Left Aligned */}
             <motion.div
                 style={{ opacity: opacity2, y: y2, filter: useTransform(blur2, v => `blur(${v}px)`) }}
-                className="absolute inset-0 flex items-center justify-start md:pl-20 px-8"
+                className="absolute inset-0 hidden md:flex items-center justify-start md:pl-20 px-4"
             >
-                <h2 className="text-4xl md:text-7xl font-bold text-white max-w-4xl leading-[1.1] tracking-tight">
-                    I engineer <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">high-performance</span> <br />
+                <h2 className="text-3xl md:text-7xl font-bold text-white max-w-4xl leading-[1.1] tracking-tight">
+                    I engineer <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">high-performance</span> <br className="hidden md:block" />
                     <span className="text-white/50">web platforms.</span>
 
                 </h2>
@@ -61,20 +61,20 @@ const Overlay = () => {
             {/* 3. Right Aligned */}
             <motion.div
                 style={{ opacity: opacity3, y: y3, filter: useTransform(blur3, v => `blur(${v}px)`) }}
-                className="absolute inset-0 flex items-center justify-end md:pr-20 px-8"
+                className="absolute inset-0 hidden md:flex items-center justify-end md:pr-20 px-4"
             >
-                <h2 className="text-4xl md:text-7xl font-bold text-right text-white max-w-4xl leading-[1.1] tracking-tight">
-                    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">algorithms</span> <br />
+                <h2 className="text-3xl md:text-7xl font-bold text-right text-white max-w-4xl leading-[1.1] tracking-tight">
+                    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">algorithms</span> <br className="hidden md:block" />
                     <span className="text-white/50">drive software.</span>
                 </h2>
             </motion.div>
 
             <motion.div
                 style={{ opacity: opacity4, y: y4, filter: useTransform(blur4, v => `blur(${v}px)`) }}
-                className="absolute inset-0 flex items-center justify-start md:pl-20 px-8"
+                className="absolute inset-0 hidden md:flex items-center justify-start md:pl-20 px-4"
             >
-                <h2 className="text-4xl md:text-7xl font-bold text-white max-w-4xl leading-[1.1] tracking-tight">
-                    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">frontend</span> <br />
+                <h2 className="text-3xl md:text-7xl font-bold text-white max-w-4xl leading-[1.1] tracking-tight">
+                    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-500">frontend</span> <br className="hidden md:block" />
                     <span className="text-white/50">meets backend.</span>
 
                 </h2>
