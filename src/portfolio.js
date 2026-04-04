@@ -139,12 +139,23 @@ export const skills = [
         label: 'Jupyter',
         desc: 'Data Analysis'
     },
+    {
+        imgSrc: '/images/docker.svg',
+        label: 'Docker',
+        desc: 'Containerization'
+    },
 ];
 
 /* ==============================================
    PROJECTS SECTION
    ============================================== */
 export const works = [
+    {
+        imgSrc: '/images/sda.png',
+        title: 'MediBridge',
+        tags: ['React.js', 'FastAPI', 'PostgreSQL', 'Docker'],
+        projectLink: 'https://github.com/satyam4565/AI-Powered-Healthcare-Assistant'
+    },
     {
         imgSrc: '/images/ems.png',
         title: 'Emplytic',
@@ -176,3 +187,59 @@ export const works = [
         projectLink: 'https://github.com/satyam4565/AlgoGuru---DSA-Chatbot'
     }
 ];
+
+/* ==============================================
+   CODING JOURNEY SECTION
+   ============================================== */
+// Generate 365 days of mock heatmap data (0-4 contributions)
+const generateHeatmapData = () => {
+    const data = [];
+    for (let i = 0; i < 365; i++) {
+        // Randomly generate activity with some bias towards 0 or 1
+        const r = Math.random();
+        let activity = 0;
+        if (r > 0.4 && r <= 0.7) activity = 1;
+        else if (r > 0.7 && r <= 0.85) activity = 2;
+        else if (r > 0.85 && r <= 0.95) activity = 3;
+        else if (r > 0.95) activity = 4;
+
+        data.push({
+            date: new Date(new Date().setDate(new Date().getDate() - (365 - i))).toISOString().split('T')[0],
+            count: activity
+        });
+    }
+    return data;
+};
+
+export const codingJourney = {
+    username: "satyium",
+    platform: "LeetCode",
+    profileUrl: "https://leetcode.com/u/satyium/",
+    subtitle: "Knight badge holder — top 3.5% globally, 800+ problems solved.",
+    stats: [
+        { label: "Total Solved", value: "865" },
+        { label: "Active Days", value: "342" },
+        { label: "Contest Badge", value: "Knight", iconColor: "emerald-400" },
+        { label: "Contest Rating", value: "1872" }
+    ],
+    problemBreakdown: [
+        { name: "Easy", value: 222, fill: "#10b981" },    // emerald-500
+        { name: "Medium", value: 498, fill: "#f59e0b" },  // amber-500
+        { name: "Hard", value: 145, fill: "#f43f5e" }     // rose-500
+    ],
+    heatmapData: generateHeatmapData(),
+    ratingProgress: [
+        { date: "Jan", rating: 1450 },
+        { date: "Feb", rating: 1520 },
+        { date: "Mar", rating: 1505 },
+        { date: "Apr", rating: 1580 },
+        { date: "May", rating: 1610 },
+        { date: "Jun", rating: 1595 },
+        { date: "Jul", rating: 1650 },
+        { date: "Aug", rating: 1680 },
+        { date: "Sep", rating: 1720 },
+        { date: "Oct", rating: 1765 },
+        { date: "Nov", rating: 1810 },
+        { date: "Dec", rating: 1872 }
+    ]
+};

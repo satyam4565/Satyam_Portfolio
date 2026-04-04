@@ -5,6 +5,7 @@ import ScrollyCanvas from './components/ScrollyCanvas'
 import Overlay from './components/Overlay'
 import About from './components/About'
 import Experience from './components/Experience'
+import CodingJourney from './components/CodingJourney'
 import Skill from './components/Skill'
 import Work from './components/Work'
 import Contact from './components/Contact'
@@ -28,6 +29,7 @@ const App = () => {
         <Overlay />
         <About />
         <Experience />
+        <CodingJourney />
         <Skill />
         <Work />
         <Contact />
